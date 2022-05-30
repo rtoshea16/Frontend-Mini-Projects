@@ -1,0 +1,150 @@
+body {
+    height: 100%;
+    background: radial-gradient(circle, white, lightgrey);
+}
+
+#background-box {
+    margin: 100px auto;
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(33, 146, 184);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 0px 0px rgb(20, 92, 116);
+    position: relative;
+}
+
+#top-row {
+    height: 20px;
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+.top {
+    padding: 10px;
+    position: absolute;
+    font-size: 18px;
+}
+#wrong-answer {
+    left: 460px;
+    background-color: rgb(244, 31, 31);
+    color: white;
+    border: 1px solid rgb(108, 0, 0);
+    display: none;
+}
+
+#right-answer {
+    left: 460px;
+    background-color: rgb(24, 184, 24);
+    color: white;
+    border: 1px solid green;
+    display: none;
+}
+
+#score {
+    left: 850px;
+    background-color: rgb(252, 252, 121);
+    color: grey;
+    box-shadow: 0px 4px 0px rgb(122, 122, 3);
+}
+
+#math-section {
+    width: 600px;
+    height: 200px;
+    background-color: rgb(151, 136, 248);
+    box-shadow: 0px 4px rgb(95, 42, 141);
+    margin: 20px auto 20px auto;
+    text-align: center;
+    font-size: 120px;
+    line-height: 175px;
+    font-family: cursive, sans-serif;
+}
+
+#instruction-box {
+    width: 600px;
+    height: 60px;
+    background-color: rgb(167, 108, 179);
+    box-shadow: 0px 4px rgb(143, 63, 170);
+    margin: 10px auto;
+    text-align: center;
+    font-size: 22px;
+    line-height: 60px;
+}
+
+#answers {
+    display: flex;
+    margin: 15px auto;
+    width: 600px;
+    height: 120px;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: white;
+    color: grey;
+    width: 120px;
+    height: 120px;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+    transition: all .2s;
+}
+
+.box:hover, #start:hover {
+    background-color: rgb(151, 136, 248);
+    color: white;
+}
+
+.box:active, #start:hover {
+    box-shadow: 0px 0px rgb(151, 136, 248);
+    top: 4px;
+}
+
+#start {
+    background-color: rgba(255, 255, 255, .5);
+    color: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    transition: all .2s;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+#countdown {
+    background-color: rgba(182, 238, 144, .8);
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    position: absolute;
+    top: 545px;
+    left: 720px;
+    box-shadow: 0px 4px green;
+    display: none;
+}
+
+#game-over {
+    color: white;
+    position: absolute;
+    height: 300px;
+    width: 700px;
+    background: linear-gradient(rgb(255, 234, 0), rgb(255, 94, 0));
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    top: 150px;
+    left: 170px;
+    z-index: 1;
+    display: none;
+}
